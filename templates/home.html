@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class='login'>
+        <h1>Price Prediction</h1>
+        <form action="{{ url_for('predict_datapoint')}}" method='post'>
+            <input type='text' name='Number_of_Riders' placeholder='Number of Riders' required='required' /><br>
+            <input type='text' name='Number_of_Drivers' placeholder='Number of Drivers' required='required' /><br>
+            <input type='text' name='Number_of_Past_Rides' placeholder='Number of Past Rides' required='required' /><br>
+            <input type='text' name='Average_Ratings' placeholder='Average Ratings' required='required' /><br>
+            <input type='text' name='Expected_Ride_Duration' placeholder='Expected Ride Duration' required='required' /><br>
+
+            <label for="Time_of_Booking">Time of Booking:</label><br>
+            <input type="radio" id="morning" name="Time_of_Booking" value="morning">
+            <label for="morning">Morning</label><br>
+            <input type="radio" id="afternoon" name="Time_of_Booking" value="afternoon">
+            <label for="afternoon">Afternoon</label><br>
+            <input type="radio" id="evening" name="Time_of_Booking" value="evening">
+            <label for="evening">Evening</label><br>
+            <input type="radio" id="night" name="Time_of_Booking" value="night">
+            <label for="night">Night</label><br>
+
+            <label for="Vehicle_Type">Vehicle Type:</label><br>
+            <input type="radio" id="premium" name="Vehicle_Type" value="0">
+            <label for="premium">Premium</label><br>
+            <input type="radio" id="economy" name="Vehicle_Type" value="1">
+            <label for="economy">Economy</label><br>
+
+            <label for="Location_Category">Location Category:</label><br>
+            <input type="radio" id="rural" name="Location_Category" value="0">
+            <label for="rural">Rural</label><br>
+            <input type="radio" id="suburban" name="Location_Category" value="1">
+            <label for="suburban">Suburban</label><br>
+            <input type="radio" id="urban" name="Location_Category" value="2">
+            <label for="urban">Urban</label><br>
+
+            <label for="Customer_Loyalty_Status">Customer Loyalty Status:</label><br>
+            <input type="radio" id="regular" name="Customer_Loyalty_Status" value="0">
+            <label for="regular">Regular</label><br>
+            <input type="radio" id="silver" name="Customer_Loyalty_Status" value="1">
+            <label for="silver">Silver</label><br>
+            <input type="radio" id="gold" name="Customer_Loyalty_Status" value="2">
+            <label for="gold">Gold</label><br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
