@@ -1,9 +1,13 @@
 
-```markdown
+
 # Dynamic_Pricing
 
 ## Overview
 Dynamic_Pricing is a project aimed at implementing dynamic pricing strategies to optimize revenue and customer satisfaction. This project involves data analysis, machine learning, and real-time pricing adjustments.
+
+A ride-sharing company wants to implement a dynamic pricing strategy to optimize fares based on real-time market conditions. The company only uses ride duration to decide ride fares currently. The company aims to leverage data-driven techniques to analyze historical data and develop a predictive model that can dynamically adjust prices in response to changing factors.
+
+The dataset containing historical ride data has been provided. It includes features such as the number of riders, number of drivers, location category, customer loyalty status, number of past rides, average ratings, time of booking, vehicle type, expected ride duration, and historical cost of the rides.
 
 ## Features
 - Real-time price adjustments based on market demand
@@ -33,8 +37,3 @@ Dynamic_Pricing is a project aimed at implementing dynamic pricing strategies to
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-You can create this file by navigating to the "master" branch and creating a new file named "README.md" using the [link provided](https://github.com/YadavTarle/Dynamic_Pricing/new/master?filename=README.md).
